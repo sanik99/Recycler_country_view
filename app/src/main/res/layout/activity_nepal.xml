@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Nepal">
+
+// first cardview
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cdview"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="60dp"
+        android:backgroundTint="#A58AE1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Country Name : Nepal"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="45dp"
+            android:text="Area : 147,516 km²"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="80dp"
+            android:text="Religious : Hinduism"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="115dp"
+            android:text="Population : 28,095,714"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+    // second cardview
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cdview2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="40dp"
+        app:cardCornerRadius="30dp"
+        android:backgroundTint="#67D85B"
+        app:layout_constraintTop_toBottomOf="@+id/cdview"
+        app:layout_constraintStart_toStartOf="@+id/cdview"
+        app:layout_constraintEnd_toEndOf="@+id/cdview">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageView2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="230dp"
+            android:layout_marginTop="45dp"
+            android:src="@drawable/npl" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Nepal is a landlocked country located in South Asia.
+It is mainly situated in the Himalayas, but also includes parts of
+the Indo-Gangetic Plain, bordering Tibet of China to the north,
+and India in the south, east, and west. The country was never colonized
+but served as a buffer state between Imperial China and British India."
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+  // third cardview
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cdview3"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="40dp"
+        app:cardCornerRadius="30dp"
+        android:backgroundTint="#4AB6E6"
+        app:layout_constraintTop_toBottomOf="@+id/cdview2"
+        app:layout_constraintStart_toStartOf="@+id/cdview2"
+        app:layout_constraintEnd_toEndOf="@+id/cdview2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Animals Found In Nepal"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginStart="85dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="Asiatic elephant, the one-horned
+rhinoceros, the Royal Bengal tiger among others. Also found here are the leopard,
+Rhesus monkey, langur, hyena, jackal, wild boar, antelope, wild cat, wolf,
+sloth bear, chital or spotted deer and barking deer."
+            android:layout_marginTop="25dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Birds Found In Nepal"
+            android:layout_marginTop="120dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginStart="85dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="lack ibis, honey kites, ospreys, black headed orioles,
+peregrine falcon, partridges, ruddy shelduck, storks, vultures and eagles."
+            android:layout_marginTop="140dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Return Home"
+        android:clickable="true"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cdview3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
